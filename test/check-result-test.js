@@ -56,3 +56,16 @@ test('should result win if player choose paper and computer chooses rock', funct
     assert.equal(result, 'win');
 });
 
+test('should result draw if player choose paper and computer chooses paper', function(assert) {
+    //Arrange
+    // Set up your parameters and expectations
+    const player = 'paper';
+    const computer = 'paper';
+    //Act 
+    // Call the function you're testing and set the result to a const
+    const result = checkResult(player, computer);
+    //Assert
+    // Make assertions about what is expected valid result
+    assert.equal(result, 'draw');
+});
+

@@ -17,12 +17,11 @@ const makeThrow = () => {
     const randomThrow = getRandomThrow(zeroOneTwo); 
     const userDraw = (userSelectedThrow === randomThrow);
 
-    const draw = userDraw(userSelectedThrow, randomThrow);
-    if (getRandomThrow === userSelectedThrow) {
-        return 'draw';
-    }
+    const result = checkResults(userSelectedThrow, randomThrow);
+    console.log(makeThrow(userSelectedThrow, randomThrow));
 };
-console.log(makeThrow());
+
+//console.log(makeThrow(userSelectedThrow, randomThrow));
 playGame.addEventListener('click', makeThrow);
 
 
