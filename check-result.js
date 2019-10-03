@@ -1,12 +1,18 @@
 
 const checkResult = (player, computer) => {
     if (player === computer) {
-        return draw;
+        return 'draw';
     } else if (player > computer) {
-        return win;
+        return 'win';
     } else if (player < computer) {
-        return lose;
+        return 'lose';
     }
 };
 
 export default checkResult;
+
+
+
+/* rock = 0
+paper = 1
+scissors = 2 */

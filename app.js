@@ -1,4 +1,5 @@
 import getRandomThrow from './get-random-throw.js';
+import checkResults from './check-result.js';
 
 const playGame = document.getElementById('my-button');
 
