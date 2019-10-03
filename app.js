@@ -1,4 +1,6 @@
-const myButton = document.getElementById('my-button');
+import getRandomThrow from './get-random-throw.js';
+
+const playGame = document.getElementById('my-button');
 
 
 
@@ -7,19 +9,14 @@ const paper = 1;
 const scissors = 2;
 
 
-function getZeroOneTwo(max) {
-    return Math.floor(Math.random() * Math.floor(max));
-}
+const makeThrow = () => {
+    const selectedRadioButton = document.querySelector('input: checked');
+    const userSelectedThrow = selectedRadioButton.value;
 
-const getRandomThrow = () => {
-    if (getZeroOneTwo === 0) {
-        return rock;
-    } else if (getZeroOneTwo === 1) {
-        return paper;
-    } else if (getZeroOneTwo === 2) {
-        return scissors;
-    }
-}
+    const zeroOneTwo = getZeroOneTwo(2);
+    const randomThrow = zeroOneTwo; 
+};
 
-console.log(getZeroOneTwo(3));
+
+//console.log(getZeroOneTwo(3));
 
