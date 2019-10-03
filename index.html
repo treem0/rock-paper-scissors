@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>Rock Paper Scissors</title>
+</head>
+
+<body>
+    <header>
+        <h1>Rock Paper Scissors</h1>
+    </header>
+    <section class="rules-set">
+        <p>Rules of the Game</p>
+        <ul> 
+            <li>paper beats rock</li>
+            <li>rock beats scissors</li>
+            <li>scissors beats papers</li>
+        </ul>
+    </section>
+    <section class="radio-buttons">
+        <label>
+        <input name="rps" type= "radio" value="rock" checked>
+        <img src="https://i.imgur.com/Xszmo49.jpg" class="radio-image">
+    </label>
+    <label> 
+        <input name="rps" type= "radio" value="paper">
+        <img src="https://i.imgur.com/Yu1vu4B.jpg" class="radio-image">
+    </label>
+    <label> 
+        <input name="rps" type= "radio" value="scissors">
+        <img src="https://i.imgur.com/61Pzs8A.jpg" class="radio-image">
+    </label>
+    </section>
+
+    <section class="my-button">
+        <button>Press to Play</button>
+    </section>
+    <section class="results">
+        <summary class="result-of-game">Result: <span id="result-goes-here"></span></summary>
+        <summary class="wins">Wins: <span id="num-wins"></span></summary>
+        <summary class="losses">Losses: <span id="num-losses"></span></summary>
+        <summary class="ties">Ties: <span id="num-ties"></span></summary>
+    </section>
+    <script type="module" src="app.js"></script>
+</body>
+
+</html>

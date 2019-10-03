@@ -1,0 +1,39 @@
+body {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+h1 {
+    display: flex;
+    border: solid;
+    justify-content: center;
+}
+.rule-set {
+    display: flex;
+    justify-content: center;
+    border: solid;
+    border-style: solid;
+}
+p {
+    display: flex;
+    justify-content: center;
+}
+ul {
+    display: flex;
+    justify-content: space-around;
+}
+.radio-buttons {
+    display: flex;
+    justify-content: space-around;
+}
+.my-button {
+    display: flex;
+    justify-content: center;
+}
+.radio-image {
+    width: 50px;
+}
+.results {
+    display: flex;
+    justify-content: space-around;
+}
