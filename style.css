@@ -25,7 +25,6 @@ ul {
 .radio-buttons {
     display: flex;
     justify-content: space-around;
-    flex-direction: column;
 }
 .my-button {
     display: flex;
@@ -34,9 +33,16 @@ ul {
 }
 .radio-image {
     width: 75px;
+    border: 5p solid transparent;
+    height: 100px;
+}
+input:checked + .radio-image {
+    border: 5px solid aqua;
 }
 .results {
     display: flex;
     justify-content: space-around;
-    
+}
+input {
+    display: none;
 }

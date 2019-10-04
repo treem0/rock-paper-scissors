@@ -8,6 +8,5 @@ const getRandomThrow = () => {
         return 'scissors';
     }
 };
-console.log(getRandomThrow());
 
 export default getRandomThrow;
