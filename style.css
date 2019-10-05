@@ -2,34 +2,59 @@ body {
     display: flex;
     justify-content: center;
     flex-direction: column;
+    max-width: 1000px;
+    width: 100%;
+    background-image: linear-gradient(#bdc3c7, #2c3e50);
 }
 h1 {
     display: flex;
     border: solid;
     justify-content: center;
+    font-family: 'Bangers', cursive;
+    background-color: #267B84;
+    color: #84828F;
+    
 }
 .rule-set {
     display: flex;
     justify-content: center;
     border: solid;
-    border-style: solid;
 }
 p {
     display: flex;
     justify-content: center;
+    font-family: 'Bangers';
+    padding: 20px;
 }
 ul {
     display: flex;
     justify-content: space-around;
+    font-family: 'Kalam', cursive;
+    padding: 50px;
 }
 .radio-buttons {
     display: flex;
     justify-content: space-around;
+    padding: 50px;
+}
+.input:hover {
+    background-color: #bdc3c7;
 }
 .my-button {
     display: flex;
     justify-content: center;
     padding: 40px;
+}
+#press-play {
+    background: teal;
+    color: whitesmoke;
+    width: 250px;
+    height: 50px;
+    font-family: 'Bangers';
+    font-size: 20px;
+}
+#press-play:hover {
+    background-color: #bdc3c7;
 }
 .radio-image {
     width: 75px;
@@ -42,6 +67,8 @@ input:checked + .radio-image {
 .results {
     display: flex;
     justify-content: space-around;
+    padding: 40px;
+    font-family: 'Kalam', cursive;
 }
 input {
     display: none;
