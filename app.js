@@ -6,6 +6,7 @@ const resultSpan = document.getElementById('result-goes-here');
 const winSpan = document.getElementById('num-wins');
 const lossSpan = document.getElementById('num-losses');
 const tieSpan = document.getElementById('num-ties');
+const compThrow = document.getElementById('computer-threw');
 
 let numberOfWins = 0;
 let numberOfLoses = 0;
@@ -27,14 +28,17 @@ function userDraw() {
     resultSpan.textContent = 'It is a draw!';
     numberOfTies ++;
     tieSpan.textContent = numberOfTies;
+    
 }
 
 const makeThrow = () => {
     const selectedRadioButton = document.querySelector('input:checked');
     const userSelectedThrow = selectedRadioButton.value;
+    
 
     const randomThrow = getRandomThrow();
-
+    compThrow.textContent = randomThrow;
+    
     const result = checkResults(userSelectedThrow, randomThrow);
     return result;
 };
