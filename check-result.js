@@ -1,4 +1,3 @@
-
 const checkResult = (player, computer) => {
     if (player === computer) {
         return 'draw';
@@ -11,8 +10,3 @@ const checkResult = (player, computer) => {
 
 export default checkResult;
 
-
-
-/* rock = 0
-paper = 1
-scissors = 2 */

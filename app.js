@@ -6,7 +6,9 @@ const resultSpan = document.getElementById('result-goes-here');
 const winSpan = document.getElementById('num-wins');
 const lossSpan = document.getElementById('num-losses');
 const tieSpan = document.getElementById('num-ties');
+
 const compThrow = document.getElementById('computer-threw');
+
 
 let numberOfWins = 0;
 let numberOfLoses = 0;
@@ -40,6 +42,7 @@ const makeThrow = () => {
     compThrow.textContent = randomThrow;
     
     const result = checkResults(userSelectedThrow, randomThrow);
+    compThrow.textContent = randomThrow;
     return result;
 };
 
